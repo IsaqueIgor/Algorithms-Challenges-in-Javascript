@@ -47,10 +47,14 @@ let arr = [[1,2,3],4,5]
 const s = arr.flat().reduce((accumulator,currentValue)=>accumulator+currentValue)
 console.log(s);
 
-var result = 0;
-    
-    for (var i=0; i<Aduplicados.length; i++) {
-        console.log(`${result} e no index ${Aduplicados[i]}`)
-        result ^= Aduplicados[i];   
-    }
+//SPREAD OPERATOR
+//Copying Arrays, also works with Objects, but does not perform deep-copy
+let fruits = ['A', 'B', 'C', 'D'];
+let fruitsCopy = [ ...fruits ]; 
+console.log(...fruitsCopy); 
 
+//Merging
+let fruits = ['A', 'B', 'C', 'D'];
+let vegetables  = ['T', 'V', 'R'];
+
+let fruitsAndVeg = [...fruits, ...vegetables];
