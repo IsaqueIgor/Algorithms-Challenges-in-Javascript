@@ -15,6 +15,13 @@ A.sort((a,b) => (a-b)); console.log(A); //ordenar em ordem crescente
 let semduplas = Array.from(new Set(Aduplicados)); // tirar duplicados do array
 console.log(`${semduplas} = Sem estar Duplicados`);
 
+//Add Element in Array
+A.push(10); //add at the end
+A.unshift(0); //Add at the start
+A = [-1, ...A, 12]; //Add at the start and at the end
+
+
+
 //NESTED ARRAY
 const nested = [ ['A', 'B'], ['C']];
 const flattened = nested.flat();
