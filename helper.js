@@ -5,8 +5,11 @@ console.log(Math.round(2.3)); //Arredonda o numero para o mais proximo inteiro
 
 //Array
 let A = [1, 3, 5, 2, 9];
-let B = [0, 0, 2, 4, 8, 10];
+let B = [0, 1, 0, 2, 4, 8, 10];
 let Aduplicados = [1, 2, 2, 3, 4, 3, 4];
+
+const similar = A.filter((value) => B.includes(value));
+console.log(`Similar: ${similar}`);
 
 console.log(A.slice(2)); //REMOVE DO ARRAY ITENS ATE O INDEX [2]
 A = A.concat(B); //juntar 2 ou mais Arrays
@@ -59,7 +62,7 @@ let fruitsCopy = [...fruits];
 console.log(...fruitsCopy);
 
 //Merging
-let fruits = ['A', 'B', 'C', 'D'];
+let fruitsM = ['A', 'B', 'C', 'D'];
 let vegetables = ['T', 'V', 'R'];
 
 let fruitsAndVeg = [...fruits, ...vegetables];
